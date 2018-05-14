@@ -1,0 +1,46 @@
+{
+    "actions": [
+        {
+            "description": "Default Intent",
+            "name": "MAIN",
+            "fulfillment": {
+                "conversationName": "nowassistantbotapp"
+            },
+            "intent": {
+                "name": "actions.intent.MAIN",
+                "trigger": {
+                    "queryPatterns": [
+                        "talk to now assistant"
+                    ]
+                }
+            }
+        },
+        {
+            "description": "Everything Else Intent",
+            "name": "allelse",
+            "intent": {
+                "name": "actions.intent.TEXT"
+            },
+            "fulfillment": {
+                "conversationName": "nowassistantbotapp"
+            }
+        },
+        {
+            "description": "Sign in Intent",
+            "name": "signin",
+            "intent": {
+                "name": "actions.intent.SIGN_IN"
+            },
+            "fulfillment": {
+                "conversationName": "nowassistantbotapp"
+            }
+        }
+    ],
+  "conversations": {
+    "now-assistant-bot-app": 
+    {
+        "name": "nowassistantbotapp",
+        "url": "https://6de76239.ngrok.io/botgoogleassistant"
+    }
+  }
+}
